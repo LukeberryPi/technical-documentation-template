@@ -1,0 +1,107 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+:root {
+  --main: hsl(130, 35%, 35%);
+  --secondary: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
+}
+
+main {
+  margin-left: 220px;
+  margin-right: 20px;
+}
+
+nav {
+  top: 0;
+}
+
+nav header {
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding: 8px 16px;
+}
+
+.nav-link-list {
+  color: var(--secondary);
+  background: var(--main);
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  border: 1px solid #333;
+  border-bottom: none;
+  overflow: auto;
+}
+
+.nav-link {
+  display: block;
+  color: var(--secondary);
+  text-decoration: none;
+  padding: 8px 16px;
+  border-bottom: 1px solid #333;
+}
+
+.nav-link:hover {
+  background: var(--secondary);
+  color: var(--main);
+}
+
+.main-section {
+  width: 100%;
+}
+
+.main-section header {
+  margin: 3rem 0 0rem;
+  font-size: 2.4rem;
+  color: var(--main);
+}
+
+.main-section header:first-child {
+  margin: 0 0 1rem;
+}
+
+.main-section li {
+  font-size: 1.8rem;
+  font-style: italic;
+  list-style-type: none;
+}
+
+.main-section p {
+  margin: 8px 0px;
+}
+
+.main-section code {
+  display: block;
+  padding: 0.8rem;
+  margin: 15px auto;
+  text-align: center;
+  width: 50%;
+  border-radius: 8px;
+  color: var(--secondary);
+  background: var(--main);
+}
+
+@media only screen and (max-width: 480px) {
+  #navbar {
+    display: none;
+  }
+  
+  #main-doc {
+    margin-left: 20px;
+  }
+}
